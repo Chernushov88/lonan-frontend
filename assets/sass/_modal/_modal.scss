@@ -1,0 +1,180 @@
+.modal{
+  position: fixed;
+  top:0;
+  left: -100vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  transition: all 0.4s ease-in-out;
+  transition-delay: 0.4s;
+  overflow: auto;
+  &.active{
+    left: 0;
+    transition-delay: 0s;
+    .modal-content{
+      transition-delay: 0.4s;
+    }
+  }
+  &-open{
+    overflow: hidden;
+    @media screen and (min-width: 1200px){
+      padding-right: 17px;
+    }
+  }
+  &-fon{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    background-color: rgba(255, 255, 255, .85);
+  }
+  &-content{
+    transition: all 0.4s ease-in-out;
+    transition-delay: 0s;
+    z-index: 20;
+    position: absolute;
+    max-width: 600px;
+    width: 100%;
+    top: -100vh;
+    left: calc(50% - 300px);
+    @media screen and (max-width: 767px){
+      max-width: 100%;
+      left: 0;
+      padding: 15px;
+    }
+  }
+}
+
+/*modal search*/
+.region{
+  &-search{
+    max-width: 350px;
+    margin: 0 auto;
+    &-group{
+      position: relative;
+      margin-bottom: 32px;
+      &:before{
+        content: '';
+        position: absolute;
+        display: block;
+        left: 22.4px;
+        top: 0;
+        bottom: 0;
+        width: 17px;
+        background: url("/img/icons/ic-search-location-black.svg") center/16px 24px no-repeat;
+      }
+
+    }
+    &-input{
+      border-radius: 30px;
+      box-shadow: 0 0 1px 0 rgba(10,31,68,0.1), 0 18px 18px 0 rgba(10,31,68,0.12) !important;
+      padding-left: 52px;
+      padding-right: 44px;
+      height: 60px;
+      color: $color-primary;
+      border: none;
+    }
+    &-btn{
+      position: absolute;
+      top: calc(50% - 24px);
+      right: 19px;
+      width: 24px;
+      padding: 0;
+      background: url("/img/icons/ic-back-blue.svg") center/24px 19px no-repeat transparent;
+      transform: scaleX(-1);
+      border: none;
+    }
+    &-result{
+      padding: 0 21px;
+      .sub-title{
+        margin-bottom: 12px;
+      }
+      &-list{
+        padding: 0;
+        list-style-type: none;
+      }
+      &-item{
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+.calendar{
+  &.fc-unthemed{
+    background-color: $calendar-tbody-bg-color;
+    .fc-head{
+      th{
+        padding: 12px 0;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $calendar-thead-text-color;
+        border: $calendar-thead-border-color;
+        background: $calendar-thead-bg-color;
+      }
+    }
+    .fc-body{
+      .fc-row{
+        thead,
+        tbody{
+          td{
+            position: relative;
+            border-color: transparent;
+            &:before{
+              content: '';
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              left: 0;
+              z-index: -1;
+            }
+          }
+        }
+        .fc-content-skeleton{
+          .fc-other-month{
+            opacity: 1;
+
+            &:before{
+              background: $calendar-tbody-bg-other-month-color;
+              bottom: -200%;
+            }
+          }
+          .fc-event-container{
+            &:before{
+              background: $calendar-tbody-bg-busy-days-color;
+              top: -23px;
+            }
+            .fc-event{
+              padding: 6px;
+              border: none;
+              margin: 0;
+              border-radius: 0;
+              background-color: transparent;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+      .fc-time{
+        font-family: "Lato", sans-serif;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 900;
+        color: $calendar-tbody-subtext-busy-days-color;
+      }
+      .fc-day-number{
+        font-family: 'Open Sans', sans-serif;
+        padding-right: 6px;
+        font-size: 12px;
+        line-height: 17px;
+        color: $calendar-tbody-text-color;
+      }
+    }
+  }
+}
+/*modal search*/

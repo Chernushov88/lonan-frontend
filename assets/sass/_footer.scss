@@ -1,0 +1,151 @@
+// FOOTER
+.footer{
+    &-container{
+        @media screen and (min-width: 992px){
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+}
+.site-footer{
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 4;
+    padding-top: 22px;
+    padding-bottom: 18px;
+    background-color: $bg-secondary;
+    font-size: 14px;
+    color: $color-1-1;
+
+    a{
+        text-decoration: none;
+
+        &:not(:hover):not(:focus){
+            color: inherit;
+        }
+    }
+    
+    // Logo
+    .logo{
+        width: 154px;
+        max-width: 100%;
+        margin: 0 auto;
+        //margin-top: 18px;
+
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .footer-wrap{
+        text-align: center;
+    }
+
+    // Navigation
+    .nav{
+        margin-top: 15px;
+        font-weight: 900;
+
+        ul{
+            margin: 0 -16px;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            @media screen and (min-width: 992px){
+                justify-content: flex-end;
+            }
+        }
+        li{
+            width: 100%;
+            display: block;
+            margin: 0;
+            padding: 0;
+
+            &.current{
+                a{
+                    color: $link-color-hover;
+                }
+            }
+        }
+        a{
+            display: block;
+            padding: 8px 16px;
+            @media (min-width: 768px){
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    // Copyright
+    .copyright{
+        margin-top: 28px;
+    }
+}
+
+@media (min-width: 414px){
+    .site-footer{
+
+        // Navigation
+        .nav{
+            li{
+                width: auto;
+            }
+        }
+    }
+}
+@media (min-width: 576px){
+    .site-footer{
+    }
+}
+@media (max-width: 767px){
+    .site-footer{
+        .logo{
+            margin: 18px 0 0;
+        }
+        .footer-wrap{
+            text-align: left;
+        }
+        .nav{
+            li{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 992px){
+    .site-footer{
+        
+        // Logo
+        .logo{
+            margin-right: 30px;
+            margin-left: 0;
+        }
+
+        .footer-wrap{
+            text-align: right;
+        }
+
+        // Navigation
+        .nav{
+            ul{
+                margin-top: -11px;
+            }
+        }
+
+        // Copyright
+        .copyright{
+            margin-top: 35px;
+            letter-spacing: .11px;
+        }
+    }
+}
+@media (min-width: 1200px){
+    .site-footer{
+    }
+}

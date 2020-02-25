@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic-add photo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Card/Add-Image" transform="translate(-20.000000, -16.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="ic-add-photo">
+                <path d="M23,19 L23,16 L25,16 L25,19 L28,19 L28,21 L25,21 L25,24 L23,24 L23,21 L20,21 L20,19 L23,19 Z M26,25 L26,22 L29,22 L29,19 L36,19 L37.83,21 L41,21 C42.1,21 43,21.9 43,23 L43,35 C43,36.1 42.1,37 41,37 L25,37 C23.9,37 23,36.1 23,35 L23,25 L26,25 Z M33,34 C35.76,34 38,31.76 38,29 C38,26.24 35.76,24 33,24 C30.24,24 28,26.24 28,29 C28,31.76 30.24,34 33,34 Z M29.8,29 C29.8,30.77 31.23,32.2 33,32.2 C34.77,32.2 36.2,30.77 36.2,29 C36.2,27.23 34.77,25.8 33,25.8 C31.23,25.8 29.8,27.23 29.8,29 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

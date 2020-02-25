@@ -1,0 +1,133 @@
+.venue{
+  &-events{
+    padding-top: 0;
+    padding-bottom: 63px;
+    .back-to{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    &-dest{
+      padding-top: 40px;
+      @media screen and (max-width: 991px){
+        padding-top: 20px;
+      }
+    }
+    &-title{
+      margin-bottom: 40px;
+      @media screen and (max-width: 991px){
+        margin-bottom: 20px;
+      }
+    }
+    &-list{
+      margin-bottom: 32px;
+      @media screen and (max-width: 991px){
+        margin-bottom: 28px;
+      }
+    }
+    &-options{
+      margin-left: 3px;
+    }
+    &-prise{
+      margin-bottom: 37px;
+      @media screen and (max-width: 991px){
+        margin-bottom: 30px;
+      }
+    }
+    &-tabs{
+      padding-top: 60px;
+      @media screen and (max-width: 991px){
+        padding-top: 39px;
+      }
+      .sidebar{
+        .widget{
+          margin-top: 36px;
+        }
+      }
+      @media screen and (max-width: 991px){
+        .widget-banner{
+          display: none;
+        }
+      }
+    }
+  }
+  &-information{
+    &-events{
+      padding-top: 30px;
+      padding-bottom: 115px;
+      @media screen and (max-width: 991px){
+        padding-top: 20px;
+        padding-bottom: 23px;
+      }
+    }
+    &-list{
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+    &-item{
+      margin-top: 13px;
+      margin-bottom: 13px;
+      padding-left: 36px;
+      &:first-child{
+        margin-top: 0;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-options{
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: $color-1-13;
+    &-list{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    &-item{
+      margin-top: 0;
+      margin-bottom: 0 !important;
+      &:not(:first-child){
+        margin-left: 25px;
+      }
+      a{
+        position: relative;
+        padding-left: 30px;
+        &:before{
+          content: '';
+          width: 25px;
+          height: 24px;
+          display: block;
+          position: absolute;
+          top: calc(50% - 12px);
+          left: 0;
+          background: url(/img/ic-sprite.svg) no-repeat 1px -130px;
+          background-size: 500px 500px;
+        }
+        &:not(:hover):not(:focus){
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+      &-share{
+        a{
+          &:before{
+            background-position: -28px -130px;
+          }
+        }
+      }
+      &-add-review{
+        a{
+          &:before{
+            background-position: -56px -130px;
+          }
+        }
+      }
+    }
+  }
+}

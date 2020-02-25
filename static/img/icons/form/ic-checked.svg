@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic-checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,3 L18,3 C19.6568542,3 21,4.34314575 21,6 L21,18 C21,19.6568542 19.6568542,21 18,21 L6,21 C4.34314575,21 3,19.6568542 3,18 L3,6 C3,4.34314575 4.34314575,3 6,3 Z M15.3141427,8.79289322 L10.0212495,14.0857864 L8.20710678,12.2716438 C7.81658249,11.8811195 7.18341751,11.8811195 6.79289322,12.2716438 C6.40236893,12.6621681 6.40236893,13.295333 6.79289322,13.6858573 L9.31414268,16.2071068 C9.70466697,16.5976311 10.3378319,16.5976311 10.7283562,16.2071068 L16.7283562,10.2071068 C17.1188805,9.81658249 17.1188805,9.18341751 16.7283562,8.79289322 C16.3378319,8.40236893 15.704667,8.40236893 15.3141427,8.79289322 Z" id="path-1"></path>
+    </defs>
+    <g id="02-Venue-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D_03B2_Venue-Profile---About" transform="translate(-453.000000, -820.000000)">
+            <g id="Input-/-Checkbox-/-Checked" transform="translate(450.000000, 817.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill-opacity="0" fill="#051033" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <g id="Color-/-Blue-/-Blue-Base-700" mask="url(#mask-2)" fill="#96D982" fill-rule="evenodd">
+                    <polygon id="Blue-/-Blue-Base-700" points="0 0 24 0 24 24 0 24"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

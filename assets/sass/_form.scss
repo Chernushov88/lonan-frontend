@@ -1,0 +1,624 @@
+﻿@import "_forms/_button";
+// FORM CONTROLS
+
+.form-group{
+    margin-bottom: 20px;
+    &--success{
+        position: relative;
+        &::after{
+            content: "";
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 28px;
+            bottom: 0;
+            margin: auto;
+            right: -18px;
+            background: url(/img/ic-save.svg)no-repeat center;
+
+            @media(max-width: 992px){
+                right: 28px;
+            }
+        }
+    }
+    &--error{
+        position: relative;
+        &:after{
+            content: "";
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 28px;
+            bottom: 0;
+            margin: auto;
+            right: -18px;
+            background: url(/img/ic-cancel.svg)no-repeat center;
+            @media(max-width: 992px){
+                right: 28px;
+            }
+        }
+    }
+    &--invalid {
+        input, select {
+            border-color: $color-2-1;
+        }
+    }
+}
+input {
+    overflow: visible;
+}
+select{
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    appearance: none !important;
+    word-wrap: normal;
+    text-transform: none;
+    cursor: pointer;
+    background-image: url(/img/icons/_publicProfile/ic-open.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
+    //background-position: 97% center;
+
+    &[size], &[multiple] {
+        height: auto;
+    }
+    &::-ms-expand{
+        display: none;
+    }
+}
+.form{
+    &-select{
+        select{
+            background-image: url(/img/icons/_publicProfile/ic-read_more.svg);
+        }
+    }
+}
+
+textarea{
+    overflow: auto;
+    display: block;
+    resize: none;
+
+    &.form-control{
+        height: auto;
+        line-height: normal;
+    }
+}
+.form-control{
+    width: 100%;
+    height: 48px;
+    display: block;
+    padding: 13px 48px 13px 11px;
+    box-shadow: none!important;
+    outline: none!important;
+    border: 1px solid $control-border-color;
+    border-radius: 4px;
+    background-color: $control-bg-color;
+    //background-clip: padding-box;
+    text-align: left;
+    line-height: 20px;
+    font-family: $control-font-family;
+    font-weight: $control-font-weight;
+    font-size: $control-font-size;
+    color: $control-text-color;
+    transition: all 0.15s ease-in-out;
+
+    &::-ms-expand {
+        background-color: transparent;
+        border: 0;
+    }
+    &:disabled, &[readonly] {
+        background-color: $bg-primary;
+        opacity: 1;
+    }
+    &:focus{
+        box-shadow: inset 0 0 0 1px $control-border-color-focus!important;
+        border-color: $control-border-color-focus;
+
+        &::-ms-value {
+            background-color: $bg-primary;
+            color: $control-text-color;
+        }
+    }
+
+    &::-webkit-input-placeholder {
+        opacity: 1;
+        color: $control-placeholder-color;
+    }
+    &::-ms-input-placeholder {
+        opacity: 1;
+        color: $control-placeholder-color;
+    }
+    &:-ms-input-placeholder {
+        opacity: 1;
+        color: $control-placeholder-color;
+    }
+    &::-moz-placeholder {
+        opacity: 1;
+        color: $control-placeholder-color;
+    }
+    &:-moz-placeholder {
+        opacity: 1;
+        color: $control-placeholder-color;
+    }
+    &:placeholder {
+        opacity: 1;
+        color: $control-placeholder-color;
+    }
+
+    &-rounded{
+        border-radius: 30px;
+    }
+
+    &-md{
+        height: 44px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+    &-lg{
+        height: 50px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}
+
+
+@media (min-width: 768px){
+    .form-control{
+        &-lg{
+            height: 60px;
+            padding-top: 19px;
+            padding-bottom: 19px;
+        }
+    }
+}
+
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+legend {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    white-space: normal;
+    line-height: inherit;
+    font-size: 1.5rem;
+    color: inherit;
+}
+label{
+    display: inline-block;
+    margin-bottom: 7px;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    color: $color-1-4;
+    cursor: pointer;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"] {
+    -webkit-appearance: listbox;
+}
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+[type="search"] {
+    outline-offset: -2px;
+    -webkit-appearance: none;
+
+}
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+input[type="search"] {
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration { display: none; }
+}
+
+
+// - checkbox control
+.form-checkbox-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    input{
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+        position: absolute;
+        padding: 0;
+        border: 0;
+        white-space: nowrap;
+
+        &:checked ~ label{
+            &:before{
+                border-color: $color-1-7;
+                background-color: $color-1-7;
+            }
+            &:after{
+                opacity: 1;
+            }
+        }
+    }
+    label{
+        position: relative;
+        margin: 0;
+        padding-left: 27px;
+        line-height: normal!important;
+        font-weight: normal;
+        font-size: 16px;
+        color: $color-primary;
+        cursor: pointer;
+
+        &:before{
+            content: '';
+            width: 18px;
+            height: 18px;
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: calc(50% - 9px);
+            left: 0;
+            border: 2px solid $color-1-7;
+            border-radius: 3px;
+            transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+        }
+        &:after{
+            content: '';
+            width: 14px;
+            height: 14px;
+            display: block;
+            opacity: 0;
+            position: absolute;
+            z-index: 2;
+            top: calc(50% - 7px);
+            left: 2px;
+            background: url(/img/icons/ic-checkbox-check.svg) no-repeat center;
+            background-size: contain;
+            transition: opacity 0.1s ease-in-out;
+        }
+    }
+}
+.form{
+    &-group{
+        &-inline{
+            display: flex;
+            flex-wrap: wrap;
+            &-label{
+                color: $control-inline-label-text-color;
+                letter-spacing: .45px;
+                line-height: 28px;
+                font-size: 18px;
+                @media(max-width: 575px) {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+
+            }
+            .form-group-radioBox,
+            .form-group-checkbox{
+                margin: 0 21px;
+            }
+        }
+        &-radioBox,
+        &-checkBox{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            label{
+                font-size: 16px;
+                line-height: 24px;
+                color: $color-primary;
+                position: relative;
+                padding-left: 28px;
+                cursor: pointer;
+                margin-bottom: 0;
+                &:before,
+                &:after{
+                    content: '';
+                    width: 24px;
+                    height: 24px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &:before{
+                    opacity: 1;
+                    z-index: 1;
+                }
+                &:after{
+                    opacity: 0;
+                    z-index: 2;
+                }
+            }
+            input{
+                display: none;
+                &:checked{
+                    &~label{
+                        &:before{
+                            opacity: 0;
+                        }
+                        &:after{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        &-radioBox{
+            display: flex;
+            align-items: center;
+            label{
+                &:before{
+                    background-image: url(/img/icons/form/ic-radio-inactive.svg);
+                }
+                &:after{
+                    background-image: url(/img/icons/form/ic-radio-active.svg);
+                }
+            }
+        }
+        &-checkBox{
+            label{
+                &:before{
+                    background-image: url(/img/icons/form/ic-unchecked.svg);
+                }
+                &:after{
+                    background-image: url(/img/icons/form/ic-checked.svg);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px){
+}
+@media (min-width: 768px){
+}
+@media (min-width: 992px){
+}
+@media (min-width: 1200px){
+}
+@media (prefers-reduced-motion: reduce) {
+    .form-control{
+        transition: none!important;
+    }
+}
+
+
+// rating
+.form-group-rate{
+    .rates{
+        width: 165px;
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        margin-left: -4px;
+    }
+    label{
+        width: 20%;
+        margin: 0;
+        position: relative;
+        z-index: 2;
+        padding-top: 20%;
+        line-height: 0;
+        font-size: 0;
+        cursor: pointer;
+
+        &:before, &:after{
+            content: '';
+            width: 25px;
+            height: 24px;
+            display: block;
+            position: absolute;
+            z-index: 3;
+            top: 4px;
+            left: 4px;
+            background: url(/img/ic-sprite.svg) no-repeat -80px -130px;
+            transition: opacity 0.15s ease-in-out;
+        }
+        &:after{
+            opacity: 0;
+            z-index: 4;
+            background-position-x: -105px;
+        }
+
+        &:hover, &:focus{
+            &:before{
+                opacity: 0;
+            }
+            &:after{
+                opacity: 1;
+            }
+
+            & ~ label{
+                &:before{
+                    opacity: 0;
+                }
+                &:after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    input{
+        width: 20%;
+        height: 100%;
+        overflow: hidden;
+        opacity: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        white-space: nowrap;
+
+        &:checked{
+            & ~ label{
+                &:before{
+                    opacity: 0;
+                }
+                &:after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    input ~ input{
+        left: 20%;
+    }
+    input ~ input ~ input{
+        left: 40%;
+    }
+    input ~ input ~ input ~ input{
+        left: 60%;
+    }
+    input ~ input ~ input ~ input ~ input{
+        left: 80%;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .form-group-rate{
+        label{
+            &:before, &:after{
+                transition: none!important;
+            }
+        }
+    }
+}
+
+
+// file upload
+.form-file{
+    &:hover, &:focus{
+        label{
+            border-color: $color-3-1;
+        }
+    }
+
+    label{
+        width: 66px;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        margin: 0;
+        border: 1px solid $border-primary;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: border-color 0.15s ease-in-out;
+
+        &:before{
+            content: '';
+            display: block;
+            padding-top: 84.375%;
+        }
+        &:after{
+            content: '';
+            width: 24px;
+            height: 24px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: url(/img/ic-sprite.svg) no-repeat -100px -101px;
+            transform: translate(-50%, -50%);
+        }
+
+        &.is-loading{
+            background-image: none!important;
+
+            &:after{
+                width: 50px;
+                height: 50px;
+                background: url(/img/icons/ic-loading.svg) no-repeat center;
+                background-size: contain;
+            }
+        }
+        &.has-image{
+            &:after{
+                display: none;
+            }
+        }
+    }
+    input{
+        width: calc(100% + 100px);
+        height: calc(100% + 100px);
+        display: block;
+        opacity: 0;
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .form-file{
+        label{
+            transition: none!important;
+        }
+    }
+}
+
+
+.load{
+    &-img{
+        max-width: 100%;
+        height: 212px;
+        border-radius: 4px;
+        border: 1px solid $border-primary;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(/img/icons/_publicProfile/ic-add_photo.svg) no-repeat center;
+        }
+        label{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        input[type='file']{
+            opacity: 0;
+        }
+    }
+}
+.border{
+    &-line{
+        width: 100%;
+        border: 2px solid $border-line;
+    }
+}

@@ -1,0 +1,47 @@
+// DESTINATION ADD REVIEW
+
+.dest-add-review{
+    .form-wrap{
+        max-width: 760px;
+    }
+    .form-group{
+        margin-bottom: 12px;
+    }
+    .form-group-rate{
+        margin-bottom: 24px;
+    }
+    .form-files{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-right: -4px;
+        margin-left: -4px;
+    }
+    .form-file{
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+    .form-button{
+        margin-right: 0;
+        margin-bottom: 12px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 575px){
+    .dest-add-review{
+        .form-button, .form-button .btn{
+            width: 100%;
+        }
+    }
+}
+@media (min-width: 576px){
+}
+@media (min-width: 768px){
+}
+@media (min-width: 992px){
+}
+@media (min-width: 1200px){
+}
+@media (prefers-reduced-motion: reduce) {
+}

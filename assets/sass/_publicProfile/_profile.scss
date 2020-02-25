@@ -1,0 +1,1026 @@
+.profile{
+  position: relative;
+  @media screen and (min-width: 768px){
+    margin-top: -156px;
+  }
+  @media screen and (min-width: 1440px){
+    &-guide-container{
+      //position: relative;
+      max-width: 1270px;
+      //left: -67px;
+      /*article{
+        max-width: 635px;
+      }*/
+    }
+  }
+  &-guide-container{
+    .post-container{
+      @media screen and (max-width: 767px){
+        padding: 0;
+        margin: 20px 0;
+        background: transparent;
+      }
+    }
+  }
+  &-user{
+    border-radius: 4px;
+    background-color: $bg-primary;
+    padding: 18px 15px 22px 19px;
+    @media screen and (max-width: 767px){
+      background: transparent;
+      padding-bottom: 5px;
+    }
+  }
+  &-avatar{
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-radius: 100%;
+    border: 5px solid $profile-avatar-border-color-1;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    img{
+      border-radius: 100%;
+    }
+    @media screen and (max-width: 767px){
+      width: 160px;
+      height: 160px;
+      margin-bottom: 16px;
+    }
+
+    &-upload{
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+  &-name{
+    color: $profile-name-text-color;
+  }
+  &-age{
+    margin-top: 3px;
+    margin-bottom: 13px;
+    @media screen and (max-width: 767px){
+      margin-bottom: 17px;
+    }
+    .age{
+      margin-left: 3px;
+    }
+  }
+  &-prise{
+    color: $profile-prise-text-color;
+  }
+  &-rating{
+    margin-top: 16px;
+    margin-bottom: 28px;
+    justify-content: space-between;
+    .rating-label{
+      padding-left: 20px;
+      background-image: url("/img/icons/_sprited/ic-add-review.svg");
+      background-repeat: no-repeat;
+      background-size: 17px 16px;
+    }
+    @media screen and (max-width: 767px){
+      margin-top: 12px;
+    }
+  }
+  &-information{
+    margin-top: 0;
+    margin-bottom: 34px;
+    @media screen and (max-width: 767px){
+      margin-top: 17px;
+      margin-bottom: 17px;
+    }
+    ol,ul{
+      padding-left: 0;
+      list-style-type: none;
+    }
+    .icon{
+      padding-left: 32px;
+      position: relative;
+      @media screen and (max-width: 767px){
+        font-size: 16px;
+      }
+      &:not(:last-child){
+        margin-bottom: 11px;
+        @media screen and (max-width: 767px){
+          margin-bottom: 7px;
+        }
+      }
+      &.icon-email{
+        margin-bottom: 8px;
+        @media screen and (max-width: 767px){
+          margin-bottom: 4px;
+        }
+      }
+      a{
+        color: $color-primary;
+        &:hover{
+          color: $link-color-primary;
+        }
+      }
+      &:before{
+        content: "";
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        width: 24px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+      }
+      &-location{
+        &:before{
+          background-image: url("/img/icons/_publicProfile/ic-location.svg");
+          background-position: center 0;
+        }
+      }
+      &-date{
+        &:before{
+          background-image: url("/img/icons/_publicProfile/ic-time.svg");
+        }
+      }
+      &-site{
+        &:before{
+          background-image: url("/img/icons/_publicProfile/ic-website.svg");
+        }
+      }
+      &-email{
+        &:before{
+          background-image: url("/img/icons/_publicProfile/ic-email.svg");
+        }
+      }
+      &-phone{
+        &:before{
+          background-image: url("/img/icons/_publicProfile/ic-phone.svg");
+        }
+      }
+    }
+  }
+  &-work-hours{
+    .sub-title{
+      color: $profile-work-hours-text-color;
+      margin-bottom: 8px;
+    }
+    ul{
+      list-style-type: none;
+      padding-left: 0;
+      li{
+        color: $profile-work-hours-list-text-color;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
+  }
+  &-guide{
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+    .title{
+      color: $control-text-color;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 6px;
+    }
+    .description{
+      line-height: 20px;
+      font-size: 14px;
+      color: $profile-work-hours-list-text-color;
+    }
+  }
+  &-album{
+    margin-bottom: 21.5px;
+    @media screen and (max-width: 767px){
+      margin-bottom: 18.5px;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      margin-left: -3.5px;
+      margin-right: -3.5px;
+    }
+    li{
+      border-radius: 4px;
+      margin: 3.5px !important;
+      background: $color-1-5;
+      overflow: hidden;
+      max-width: calc(33.3333334% - 7px);
+      @media screen and (min-width: 768px){
+        max-height: 88px;
+      }
+      img{
+        width: 100%;
+      }
+      &.show-more{
+        position: relative;
+        .count{
+          position: absolute;
+          background-color: rgba(0,0,0,0.5);
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $white;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  &-menu{
+    margin-bottom: 41px;
+    @media screen and (max-width: 767px){
+      margin-bottom: 20px;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    li{
+      margin-bottom: 1px !important;
+      background: $profile-menu-bg-color;
+      font-weight: bold;
+      color: $profile-menu-text-color;
+      position: relative;
+      transition: all .3s ease;
+      padding: 8px 14px 8px 12px;
+      a{
+        color: inherit;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+      }
+      &:hover,
+      &:focus{
+        color: $profile-menu-text-color-hover;
+        background: $profile-menu-bg-color-hover;
+        a{
+          color: $profile-menu-text-color-hover;
+        }
+      }
+
+    }
+    &-item{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &-profile{
+        &.active{
+          background: $profile-menu-bg-color-profile;
+          &:hover,
+          &:focus{
+            background: $profile-menu-bg-color-profile;
+          }
+        }
+      }
+      &-events{
+        &.active{
+          background: $profile-menu-bg-color-events;
+          &:hover,
+          &:focus{
+            background: $profile-menu-bg-color-events;
+          }
+        }
+      }
+      &-settings{
+        &.active{
+          background: $profile-menu-bg-color-settings;
+          &:hover,
+          &:focus{
+            background: $profile-menu-bg-color-settings;
+          }
+        }
+      }
+      &-guide{
+        &.active{
+          background: $profile-menu-bg-color-guide;
+          &:hover,
+          &:focus{
+            background: $profile-menu-bg-color-guide;
+          }
+        }
+      }
+      &:after{
+        content:'';
+        position: absolute;
+        right: 14px;
+        top: calc(50% - 8px);
+        width: 20px;
+        height: 20px;
+        background-image: url(/img/sprite-profile-menu.svg);
+        background-repeat: no-repeat;
+        background-position: -3px -9px;
+        transform: rotate(-90deg);
+      }
+    }
+    &-icon{
+      .icon{
+        width: 32px;
+        height: 32px;
+        margin-right: 15px;
+        &:after{
+          content: "";
+          display: block;
+          width: 32px;
+          height: 32px;
+          margin: auto;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      &-profile{
+        .icon{
+          &:after{
+            background-image: url("/img/icons/_publicProfile/ic-user.svg");
+          }
+        }
+      }
+      &-events{
+        .icon{
+          &:after{
+            background-image: url("/img/icons/_publicProfile/ic-events.svg");
+          }
+        }
+      }
+      &-settings{
+        .icon{
+          &:after{
+            background-image: url("/img/icons/_publicProfile/Combined Shape.svg");
+          }
+        }
+      }
+      &-guide{
+        .icon{
+          &:after{
+            background-image: url("/img/icons/_publicProfile/ic-guide.svg");
+          }
+        }
+      }
+    }
+  }
+  &-dropdown-content{
+    padding: 17px 16px 20px 20px;
+    @media screen and (max-width: 767px){
+      padding: 18px 20px 20px 20px;
+    }
+    &.profile-contact-information{
+      @media screen and (min-width: 768px){
+        display: none;
+      }
+    }
+  }
+  &-languages{
+
+  }
+  &-ameneties{
+    .dropdown-collapse-menu{
+      margin-top: 13px;
+    }
+  }
+  &-about{
+    .dropdown-collapse-menu{
+      margin-top: 9px;
+    }
+  }
+  &-mobile{
+    &-container{
+      @media screen and (max-width: 767px){
+        display: flex;
+        flex-direction: column;
+        padding-top: 13px;
+      }
+    }
+  }
+  &-to-do{
+    &.check-mark-list{
+      li{
+        padding-left: 26px;
+        font-size: 12px;
+      }
+    }
+    .dropdown-collapse-menu{
+      margin-top: 15px;
+    }
+  }
+  &-btn{
+    padding: 7px 21.4px;
+    line-height: 24px;
+    font-weight: 600;
+    min-height: auto;
+    &-content{
+      @media screen and (max-width: 767px){
+        display: flex;
+        .profile-btn{
+          margin: 16px 10px;
+          &:first-child{
+            margin-left: 0;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  &-learn-more{
+    text-align: left;
+    padding: 7px 14px;
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 768px){
+      display: none;
+    }
+    .menu-bar{
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      .bar{
+        background-color: $white;
+      }
+    }
+  }
+  &-dropdown-container{
+    .btn-dropdown-close{
+      @media screen and (min-width: 768px){
+        display: none;
+      }
+    }
+    @media screen and (max-width: 767px){
+      display: none;
+    }
+  }
+  @media screen and (max-width: 767px){
+    &-avatar{
+      margin-top: -108px;
+    }
+    &-name,
+    &-prise{
+      text-align: center;
+    }
+    &-rating{
+      justify-content: center;
+      margin-bottom: 5px;
+      .rating-label{
+        display: none;
+      }
+    }
+  }
+  &-personal{
+    &-container{
+      @media screen and (max-width: 767px){
+        padding-right: 0;
+        padding-left: 0;
+        .post-container{
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+      }
+    }
+    @media screen and (min-width: 768px){
+      margin-top: -164px;
+    }
+    .profile-user{
+      padding: 28px 20px 22px;
+      @media screen and (max-width: 767px){
+        background-color: $bg-primary;
+        padding: 28px 20px 20px;
+        margin-bottom: 16px;
+        .profile-personal-content{
+          order: 1;
+        }
+        .profile-album{
+          order: 3;
+        }
+        .profile-menu{
+          order: 2;
+        }
+        .btn-icons-logout{
+          order: 4;
+        }
+      }
+    }
+    .profile-information{
+      margin-top: 0;
+      margin-bottom: 21px;
+      @media screen and (max-width: 767px){
+        margin-top: 0;
+        margin-bottom: 27px;
+      }
+    }
+    .profile-avatar{
+      border-color: $profile-avatar-border-color-2;
+    }
+    &.public{
+      .profile-avatar{
+        border-color: transparent;
+        box-shadow: none;
+      }
+    }
+  }
+  &-settings{
+    &-content{
+      background-color: $bg-primary;
+      width: 100%;
+      @media screen and (min-width: 1200px){
+        margin-right: 30px;
+      }
+      &-empty{
+        @media screen and (min-width: 1200px){
+          height: 75vh;
+        }
+      }
+    }
+  }
+}
+
+
+.settings {
+    position: relative;
+
+    .btn-icons-settings {
+        position: absolute;
+    }
+
+    &.banner {
+        .btn-icons-settings {
+            top: 28px;
+            right: 28px;
+
+            @media screen and (max-width: 767px) {
+                top: 20px;
+                right: 20px;
+            }
+        }
+    }
+
+    .profile-avatar {
+        position: relative;
+        img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+        .btn-icons-settings {
+            left: calc(50% - 14px);
+            bottom: 20px;
+
+            @media screen and (max-width: 767px) {
+                bottom: 10px;
+            }
+        }
+    }
+
+    &-events {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        &-empty {
+            @media screen and (min-width: 1200px) {
+                height: 75vh;
+            }
+        }
+
+		.main-title {
+			position: relative;
+			padding-left: 33px;
+			cursor: pointer;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 20px;
+				height: 16px;
+				background-size: 500px 500px;
+				margin: auto;
+				left: 0;
+				bottom: 0;
+				top: 3px;
+				background: url(/img/ic-sprite.svg) no-repeat -110px -60px;
+			}
+		}
+
+		.buttons {
+			.btn-default-dark {
+				margin-left: 0;
+			}
+			.btn-primary {
+				margin-left: 16px;
+			}
+		}
+    }
+
+    &-content {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .guide-profile {
+            padding-bottom: 26px;
+
+            .settings-form {
+                .form-wrapper {
+                    padding: 20px 20px 4px 20px;
+                    border-bottom: 3px solid $color-1-10;
+
+                    &:last-child {
+                        border: none;
+                        padding-bottom: 0;
+                    }
+
+                    .form-title {
+                        margin-bottom: 15px;
+                        margin-top: 11px;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 20px;
+                            color: $color-1-13;
+                        }
+                    }
+
+                    .form-group {
+                        textarea ~ label {
+                            color: $color-1-1;
+                        }
+                        textarea {
+                            resize: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .venue-profile-form {
+            padding: 25px 19px 30px 19px;
+
+            .sub-title {
+                font-weight: 900;
+                &-6 {
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                }
+
+                &-7 {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .venue-items {
+                margin: 0;
+                justify-content: space-between;
+            }
+
+            .venue-profile-head {
+                padding-top: 0;
+                min-height: 0;
+                margin-bottom: 28px;
+            }
+
+            .venue-profile-plan {
+                flex-direction: row;
+                min-height: 120px;
+                align-items: center;
+                margin-bottom: 40px;
+
+                &-top {
+                    align-self: flex-start;
+                }
+
+                &-bottom {
+                    margin-top: 12px;
+
+                    .btn {
+                        padding: 13px 30px;
+                    }
+
+                    .active-plan {
+                        margin-bottom: 14px;
+                    }
+                }
+
+                &.column {
+                    flex-direction: column;
+                    align-items: unset;
+                    max-width: 280px;
+
+                    @media screen and (max-width: 1200px) {
+                        max-width: 255px;
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        max-width: 100%;
+                    }
+
+                    .venue-profile-plan-bottom {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .account-information-desc {
+                margin-bottom: 40px;
+
+                .account-information-list {
+                    .item {
+                        cursor: pointer;
+                        transition: .25s ease-in-out;
+
+                        &:hover {
+                            color: $color-4-1;
+
+                            a {
+                                color: $color-4-1;
+                            }
+                        }
+
+                        .form-element {
+                            position: relative;
+                            display: none;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 100%;
+
+                            .form-group {
+                                flex: 0 1 88%;
+                                margin-bottom: 0;
+
+                                @media screen and (max-width: 1200px) {
+                                    flex: 0 1 86%;
+                                }
+
+                                @media screen and (max-width: 992px) {
+                                    flex: 0 1 100%;
+                                    margin-bottom: 14px;
+                                }
+                            }
+
+                            .form-controls {
+                                flex: 0 1 10%;
+                                margin-top: 29px;
+
+                                .btn {
+                                    background-color: transparent;
+                                    outline: 0;
+                                    border: none;
+                                    padding: 0;
+
+                                    &.save {
+                                        margin-left: 28px;
+                                    }
+                                }
+
+                                @media screen and (max-width: 1200px) {
+                                    flex: 0 1 12%;
+                                    text-align: right;
+                                }
+
+                                @media screen and (max-width: 992px) {
+                                    flex: 0 1 auto;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                    transform: translateY(-30%);
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .form-field-border {
+            width: 100%;
+            border: none;
+            padding: 0;
+
+            &.active {
+                border: 1px solid #E1E4E8;
+                padding: 20px 30px 23px;
+
+                .form-fields {
+                    display: block;
+                }
+
+                .payment-btns {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                }
+            }
+
+            .row {
+                .sub-title {
+                    margin: 0;
+                    white-space: nowrap;
+                }
+            }
+
+            .title {
+                margin-bottom: 12px;
+            }
+
+            .form-group {
+                margin-bottom: 10px;
+            }
+
+            .form-fields {
+                display: none;
+            }
+
+            .payment-btns {
+                display: none;
+                justify-content: flex-end;
+
+                @media screen and (max-width: 992px) {
+                    justify-content: flex-start;
+                     margin-top: 15px;
+                }
+
+                @media screen and (max-width: 576px) {
+                    flex-wrap: wrap;
+                }
+
+                .btn {
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+
+                    &-default-dark {
+                        max-width: 118px;
+                        margin-right: 15px;
+                        @media screen and (max-width: 576px) {
+                            margin-right: 0;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    &-primary {
+                        max-width: 166px;
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        max-width: none;
+                        min-width: 0;
+                        flex: 0 1 50%;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        flex: 0 1 100%;
+                    }
+
+                }
+            }
+
+            .secure {
+                position: relative;
+                padding-left: 28px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 18px;
+                color: $color-1-1;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -7px;
+                    left: 0;
+                    margin: auto;
+                    width: 20px;
+                    height: 24px;
+                    background: url(/img/ic-lock.svg) no-repeat center;
+                }
+            }
+
+            .secure-footer {
+                margin-top: 13px;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .cards-list {
+                @media screen and (max-width: 576px) {
+                    margin-top: 15px;
+                }
+
+                .item {
+                    margin-left: 8px;
+
+                    &:first-child {
+                        @media screen and (max-width: 576px) {
+                            margin: 0;
+                        }
+                    }
+
+                    svg,
+                    img {
+                        @media screen and (max-width: 576px) {
+                            max-width: 49px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .payment-information {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+
+            .payment-card {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                align-items: center;
+                flex: 0 1 85%;
+
+                @media screen and (max-width: 576px) {
+                    flex-wrap: wrap;
+                }
+
+                &-image {
+                    margin-right: 10px;
+                }
+
+                &-input {
+                    font-family: $font-primary;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    color: $color-1-3;
+
+                    input {
+                        font-family: $font-primary;
+                        font-weight: 500;
+                        font-size: 16px;
+                        border: none;
+                        max-width: 131px;
+
+                        &:focus {
+                            outline: 0;
+                        }
+                    }
+                }
+
+                .devide {
+                    width: 1px;
+                    height: 12px;
+                    background-color: $color-1-7;
+                    margin: 0 20px;
+
+                    @media screen and (max-width: 576px) {
+                        width: calc(100% - 30px);
+                        height: 1px;
+                        margin: 10px 0;
+                    }
+                }
+            }
+
+            .payment-controls {
+                flex: 0 1 15%;
+
+                .account-information-list {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .item {
+                        margin-bottom: 0;
+
+                        &:not(:last-child) {
+                            margin-right: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

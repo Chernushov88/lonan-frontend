@@ -1,0 +1,116 @@
+// HERO
+
+.section-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $image-bg-placeholder;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: $white;
+
+    &:first-child{
+        margin-top: -35px;
+    }
+    &:last-child{
+        margin-bottom: -40px;
+    }
+
+    .container{
+        min-height: 330px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .hero-body{
+        max-width: 100%;
+    }
+    .hero-title{
+        margin: 0;
+        text-shadow: 0 0 20px rgba($black, 0.5);
+        line-height: 1;
+        letter-spacing: 1.43px;
+        font-weight: 600;
+        font-size: 40px;
+        color: inherit;
+
+        u{
+            position: relative;
+            text-decoration: none;
+            color: $color-2-9;
+
+            &:after{
+                content: '';
+                width: 94%;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                border-top: 3px solid;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .search-form{
+        width: 540px;
+        margin: 0 auto;
+
+        .form-group{
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 576px){
+    .section-hero{
+        .hero-title{
+            font-size: 50px;
+        }
+    }
+}
+@media (min-width: 768px){
+    .section-hero{
+        &:first-child{
+            margin-top: -40px;
+        }
+        &:last-child{
+            margin-bottom: -50px;
+        }
+
+        .container{
+            min-height: 430px;
+            padding-bottom: 55px;
+        }
+        .hero-title{
+            font-size: 60px;
+        }
+    }
+}
+@media (min-width: 992px){
+    .section-hero{
+        .hero-title{
+            font-size: 70px;
+        }
+    }
+}
+@media (min-width: 1200px){
+    .section-hero{
+        &:first-child{
+            margin-top: -45px;
+        }
+        &:last-child{
+            margin-bottom: -60px;
+        }
+
+        .container{
+            min-height: 530px;
+            padding-bottom: 110px;
+        }
+        .hero-title{
+            font-size: 80px;
+        }
+    }
+}

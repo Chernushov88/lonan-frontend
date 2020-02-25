@@ -1,0 +1,50 @@
+// Base
+@import "sass/variables";
+@import "sass/layout";
+@import "sass/form";
+@import "sass/_components.scss";
+@import "sass/grid";
+@import "sass/constructor";
+@import "sass/_components/fonts";
+
+// Vendors
+@import "sass/_vendors/tiny-slider";
+@import "sass/_vendors/fslightbox.min";
+
+// Sections
+@import "sass/header";
+@import "sass/_sections/section-hero";
+@import "sass/_sections/section-destination-nav";
+@import "sass/_sections/section-items";
+@import "sass/_sections/section-faq";
+@import "sass/_sections/section-destinations";
+@import "sass/_sections/section-destination";
+@import "sass/_sections/section-destination-add-review";
+@import "sass/footer";
+@import "sass/banner";
+@import "sass/container";
+@import "sass/_venueProfile/venue-profile";
+@import "sass/_publicProfile/profile";
+@import "sass/_publicProfile/post-list";
+@import "sass/_message/message";
+@import "sass/_signIn/signIn";
+@import "sass/_sections/_venue-details";
+@import "sass/_modal/_modal";
+
+
+// pages by Zhuravlev Artem
+@import "sass/pages/main-page/main-banner";
+@import "sass/pages/main-page/main-content";
+@import "sass/pages/top-categories/top-categories-banner";
+@import "sass/pages/posts-catalog/posts-catalog";
+@import "sass/pages/contact-us/contact-us";
+@import "sass/pages/faq/faq";
+@import "sass/pages/b-venue/b-venue";
+@import "sass/pages/thank/thank";
+
+// front-end zhuravlev custom
+@import "sass/_sections/custom-zhuravlev";
+
+
+// front-end Soloviev custom
+@import "sass/_sections/custom-soloviev";

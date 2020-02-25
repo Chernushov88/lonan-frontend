@@ -1,0 +1,68 @@
+.faq{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    &-holder{
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 39px 30px 32px 61px;
+        border-radius: 4px;
+        background: $white;
+    }
+    .title-section{
+        margin-bottom: 33px;
+    }
+
+    &-title{
+        font-size: 20px;
+    }
+    &-accordion{
+        .item{
+            position: relative;
+            padding-bottom: 13px;
+            &::before{
+                content: "";
+                position: absolute;
+                left: -27px;
+                top: 11px;
+                width: 13px;
+                height: 2px;
+                background: $color-1-2;
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                left: -21px;
+                top: 5px;
+                width: 2px;
+                height: 13px;
+                background: $color-1-2;
+            }
+
+            // margin-bottom: 13px;
+            cursor: pointer;
+            &.active{
+                padding-bottom: 19px;
+                &::after{
+                    opacity: 0;
+                }
+            }
+        }
+        .faq-title{
+            margin-bottom: 7px;
+        }
+
+    }
+}
+
+@media(max-width: 575px) {
+
+    .faq{
+        &-holder{
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-right: 20px;
+            padding-left: 51px;
+        }
+    }
+}

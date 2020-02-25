@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="10px" viewBox="0 0 20 10" style="transform: scaleY(-1);" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic-open</title>
+    <desc>Created with Sketch.</desc>
+    <g id="01_Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D_05A_Guide-Public-Profile" transform="translate(-383.000000, -1244.000000)" fill="#C9CED6">
+            <g id="ic-open" transform="translate(393.000000, 1249.000000) rotate(-180.000000) translate(-393.000000, -1249.000000) translate(383.000000, 1244.000000)">
+                <path d="M10.0004348,10 C9.88912802,10 9.77782126,9.95916752 9.69260201,9.87833587 L0.127176678,0.71186017 C-0.0423922259,0.549363555 -0.0423922259,0.285202392 0.127176678,0.122705777 C0.296745581,-0.0397908377 0.572403748,-0.0397908377 0.741972652,0.122705777 L10.0004348,8.99418762 L19.2580273,0.121872461 C19.4275963,-0.0406241537 19.7032544,-0.0406241537 19.8728233,0.121872461 C20.0423922,0.284369076 20.0423922,0.548530239 19.8728233,0.711026854 L10.307398,9.87750255 C10.2230483,9.95916752 10.1117416,10 10.0004348,10 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

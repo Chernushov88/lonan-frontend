@@ -1,0 +1,183 @@
+//btn-icons
+.btn-icons{
+  border: none;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  min-height: auto;
+  &:before,&:after{
+    content: '';
+    background: url(/img/ic-sprite.svg) no-repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  &:before{
+    z-index: 1;
+  }
+  &:after{
+    z-index: 2;
+    opacity: 0;
+  }
+  &:hover,
+  &:focus{
+    &:before{
+      opacity: 0;
+    }
+    &:after{
+      opacity: 1;
+    }
+  }
+  &-delete{
+    width: 24px;
+    height: 24px;
+    &:before,
+    &:after{
+      background: url(/img/icons/ic-delete.svg) no-repeat;
+      background-position-y: 0;
+      width: 24px;
+      height: 24px;
+    }
+    &:before{
+      background-position-x: 3px;
+    }
+    &:after{
+      background-position-x: -19px;
+    }
+    &-2{
+      &:before{
+        background: url(/img/icons/ic-delete.svg) no-repeat;
+        background-position-y: 0;
+        width: 20px;
+        height: 24px;
+      }
+    }
+  }
+  &-confirm{
+    width: 32px;
+    height: 32px;
+    &:before,
+    &:after{
+      background: url(/img/icons/ic-confirm-message.svg) no-repeat;
+      background-position-y: 2px;
+      width: 32px;
+      height: 32px;
+    }
+    &:before{
+      background-position-x: 1px;
+    }
+    &:after{
+      background-position-x: -29px;
+    }
+  }
+  &-settings{
+    width: 28px;
+    height: 28px;
+    &:before,
+    &:after{
+      width: 28px;
+      height: 28px;
+      background: url("/img/icons/_publicProfile/ic-edit-white.svg") no-repeat center;
+    }
+    &:after{
+      background: url("/img/icons/_publicProfile/ic-edit.svg") no-repeat center;
+    }
+    &-link{
+      width: 24px;
+      height: 24px;
+      &:before,
+      &:after{
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: url("/img/icons/_publicProfile/ic-edit.svg") no-repeat center;
+      }
+      &:after{
+        background: url("/img/icons/_publicProfile/ic-edit-green.svg") no-repeat center;
+      }
+    }
+  }
+  &-text{
+    border: none;
+    position: relative;
+    background-color: transparent;
+    padding: 0;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    color: $button-icon-logout-text-color;
+    &:before{
+      content: '';
+      position: relative;
+      margin-right: 8px;
+    }
+    &:hover{
+      color: $button-icon-logout-text-color-hover;
+    }
+  }
+  &-logout{
+    &:before{
+      width: 24px;
+      height: 24px;
+      background: url('/img/icons/_publicProfile/ic-kogout.svg') no-repeat center;
+    }
+  }
+  &-option{
+    &-img{
+      &:before,
+      &:after{
+        width: 28px;
+        height: 22px;
+        margin: auto;
+        background: url('/img/icons/_publicProfile/ic-image.svg') no-repeat;
+        background-position: 0 0;
+      }
+      &:after{
+        background-position-y: -28px;
+      }
+    }
+    &-location{
+      &:before,
+      &:after{
+        width: 17px;
+        height: 24px;
+        margin: auto;
+        background: url('/img/icons/_publicProfile/ic-location.svg') no-repeat;
+        background-position: 0 0;
+      }
+      &:after{
+        background-position-y: -27px;
+      }
+    }
+    &-emoji{
+      &:before,
+      &:after{
+        width: 24px;
+        height: 24px;
+        margin: auto;
+        background: url('/img/icons/_publicProfile/ic-emoji.svg') no-repeat;
+        background-position: 0 -2px;
+      }
+      &:after{
+        background-position-y: -30px;
+      }
+    }
+    &-link{
+      &:before,
+      &:after{
+        width: 24px;
+        height: 18px;
+        margin: auto;
+        background: url('/img/icons/_publicProfile/ic-link.svg') no-repeat;
+        background-position: 0 -2px;
+      }
+      &:after{
+        background-position-y: -24px;
+      }
+    }
+  }
+}

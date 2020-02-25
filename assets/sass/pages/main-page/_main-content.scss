@@ -1,0 +1,102 @@
+.destination-content{
+    padding-top: 71px;
+    padding-bottom: 60px;
+    background-color: $white;
+    .title{
+        margin-bottom: 29px;
+    }
+
+    .cards{
+        margin-bottom: 11px;
+    }
+
+    .destination-card{
+        margin-bottom: 30px;
+        @media (max-width: 767px){
+            margin-bottom: 20px;
+        }
+        .link{
+            position: relative;
+            display: block;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 20px;
+            height: 348px;
+            display: flex;
+            align-items: flex-end;
+            border-radius: 4px;
+            overflow: hidden;
+            @media (max-width: 767px){
+                height: 220px;
+                padding-bottom: 16px;
+                padding-left: 22px;
+                padding-right: 22px;
+            }
+
+            &:hover{
+                text-decoration: none;
+                .pic{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .pic{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: cover;
+            transition: .4s;
+        }
+
+        .desc{
+            z-index: 1;
+        }
+
+        .title{
+            margin-bottom: 5px;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 1;
+            color: $white;
+            letter-spacing: -.2px;
+            
+        }
+
+        .subtitle{
+            margin-top: 0;
+            font-size: 14px;
+            font-weight: 700;
+            color: $white;
+        }
+    }
+
+    @media(max-width: 767px) {
+       padding-top: 37px;
+       padding-bottom: 39px;
+
+       .title{
+           margin-bottom: 70px;
+           line-height: 1.5;
+       }
+       .cards{
+           margin-bottom: 19px;
+       }
+       .card{
+           margin-bottom: 21px;
+           &-link{
+               padding-left: 21px;
+               padding-bottom: 16px;
+               min-height: 219px;
+           }
+       }
+    }
+}
+
+.main-footer{
+    padding-top: 20px;
+}

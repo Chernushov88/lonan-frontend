@@ -1,0 +1,68 @@
+// DESTINATION NAV
+.padding-t-none{
+  padding-top: 0;
+}
+.section-destnav{
+  padding: 0;
+  border-top: 1px solid #979797;
+  .nav{
+    .menu{
+      font-weight: 500;
+      display: flex;
+      margin-left: -70px;
+      width: calc(100% + 140px);
+      justify-content: center;
+      @media (max-width: 1280px){
+        margin-left: -40px;
+        width: calc(100% + 80px);
+      }
+      @media (max-width: 1100px){
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+
+      }
+    }
+  }
+  .menu-item{
+    margin: 0 0 0 50px;
+    @media (max-width: 1280px){
+      margin-left: 20px;
+    }
+    @media (max-width: 1100px){
+      margin: 0 0 5px;
+
+    }
+    .menu-link{
+      color: #333;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      font-size: 16px;
+      line-height: 24px;
+      transition: 0s;
+      @media (max-width: 1100px){
+        padding: 15px;
+      }
+      &:hover{
+        color: #22C993;
+        svg{
+          path{
+            fill: #22C993;
+          }
+        }
+      }
+    }
+    svg,
+    img{
+      min-width: 25px;
+      width: 25px;
+      margin-right: 5px;
+    }
+    .menu-item-text{
+      white-space: nowrap;
+    }
+  }
+
+}
+

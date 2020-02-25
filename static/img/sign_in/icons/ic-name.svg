@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="22px" viewBox="0 0 18 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/ ic-name</title>
+    <desc>Created with Sketch.</desc>
+    <g id="04-User-Login" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="D_09A2_User-Sign-Up-Email" transform="translate(-813.000000, -499.000000)" stroke="#A7ABBD">
+            <g id="Icon/-ic-name" transform="translate(814.000000, 500.000000)">
+                <path d="M10.8695652,12.6086957 C13.7513043,12.6086957 16.0869565,14.9443478 16.0869565,17.826087 L16.0869565,18.6956522 C16.0869565,18.6956522 13.3695652,19.5652174 8.26086957,19.5652174 C3.15217391,19.5652174 0.434782609,18.6956522 0.434782609,18.6956522 L0.434782609,17.826087 C0.434782609,14.9443478 2.77043478,12.6086957 5.65217391,12.6086957 L10.8695652,12.6086957 Z M3.91304348,4.7826087 C3.91304348,2.38173913 5.86,0.434782609 8.26086957,0.434782609 C10.6617391,0.434782609 12.6086957,2.38173913 12.6086957,4.7826087 C12.6086957,7.18347826 10.6617391,10 8.26086957,10 C5.86,10 3.91304348,7.18347826 3.91304348,4.7826087 Z" id="icon-name"></path>
+            </g>
+        </g>
+    </g>
+</svg>

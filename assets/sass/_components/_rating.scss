@@ -1,0 +1,31 @@
+// RATING
+.rating{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .rating-bar,
+  .rating-bar-inner{
+    background-image: url(/img/icons/ic-stars.png);
+    background-repeat: no-repeat;
+    background-size: 101px 34px;
+  }
+  .rating-bar{
+    width: 101px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin: 4px 11px 4px 0;
+    background-position: 0 0;
+  }
+  .rating-bar-inner{
+    width: 0;
+    max-width: 100%;
+    height: 16px;
+    background-position: 0 100%;
+  }
+  .rating-label{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    line-height: 1;
+  }
+}

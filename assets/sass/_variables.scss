@@ -1,0 +1,283 @@
+﻿// FONTS
+$font-primary: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+$font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$line-height-default: 1.5;
+$font-size-default: 16px;
+
+
+
+// COLORS
+$trans: transparent;
+$white: #fff; // pm bg
+$black: #000;
+
+$color-1-1: #131313;
+$color-1-2: #222; // ttl clr
+$color-1-3: #333; // pm clr
+$color-1-4: #8A94A6;
+$color-1-5: #A6AEBC;
+$color-1-6: #D8D8D8; // img bg
+$color-1-7: #C9CED6;
+$color-1-8: #C6C6C6; // (198, 198, 198)
+$color-1-9: #E1E4E8; // pm bd
+$color-1-10: #FAFAFA; // sec bg
+$color-1-11: #F8F9FB;
+$color-1-12: #182C4F;
+$color-1-13: #4a4a4a;
+$color-1-14: #E6ECF0;
+$color-1-15: #121212;
+
+$color-2-1: #F03D3D;
+$color-2-2: #FF5980;
+$color-2-3: #FF5C18;
+$color-2-4: #F07300;
+$color-2-5: #FF9538;
+$color-2-6: #FFA882;
+$color-2-7: #FFBB38;
+$color-2-8: #FFCD18;
+$color-2-9: #E9993E;
+
+$color-3-1: #96D982;
+$color-3-2: #57D968;
+$color-3-3: #3ED3A3;
+$color-3-4: #00D590;
+$color-3-5: #22C993;
+
+$color-4-1: #59C3B6;
+$color-4-2: #45BCE4;
+$color-4-3: #438CAE;
+$color-4-4: #3366FF;
+$color-4-5: #1285FF;
+$color-4-6: #20D1FF;
+$color-4-7: #8C58FF;
+$color-4-8: #916BFF;
+$color-4-9: #D438FF;
+
+$color-5-1: #D2618E;
+$color-5-2: #5AACFF;
+$color-5-3: #75CDC3;
+$color-5-4: #5EC5B9;
+$color-5-5: #4460A0;
+$color-5-6: #CC5542;
+$color-5-7: #818181;
+$color-5-8: #0A1F44;
+$color-5-9: #222222;
+
+$color-6-1: #2C3135;
+
+// primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, nonary, denary
+// -primary, -secondary, -success, -info, -danger, -warning, -light, -dark, -white, -muted
+
+
+// TEXT
+$color-primary: $color-1-3;
+$title-color-primary: $color-1-2;
+
+$link-color-primary: $color-3-3;
+$link-color-visited: $color-3-3;
+$link-color-hover: $color-4-1;
+
+
+// BACKGROUND
+$bg-primary: $white;
+$bg-secondary: $color-1-10;
+$bg-tertiary: $color-3-1;
+$bg-quaternary: $color-4-1;
+
+
+// BORDER
+$border-primary: $color-1-9;
+$border-primary-2: $color-1-3;
+$border-line: $color-1-10;
+
+
+// IMAGE
+$image-bg-placeholder: $color-1-6;
+
+
+// FORM CONTROLS
+$control-border-color: $border-primary;
+$control-border-color-focus: $color-3-1;
+$control-bg-color: $bg-primary;
+$control-font-family: $font-primary;
+$control-font-weight: normal;
+$control-font-size: $font-size-default;
+$control-text-color: $color-1-4;
+$control-placeholder-color: $color-1-5;
+$control-inline-label-text-color: $color-5-8;
+
+// input type
+$input-type-text-color: $color-1-3;
+// BUTTTONS
+$button-font-family: $font-primary;
+$button-font-weight: 500;
+$button-font-size: $font-size-default;
+
+// - primary
+$button-primary-border-color: $color-3-1;
+$button-primary-bg-color: $color-3-1;
+$button-primary-text-color: $white;
+$button-primary-border-color-hover: $color-3-2;
+$button-primary-bg-color-hover: $color-3-2;
+$button-primary-text-color-hover: $white;
+
+// - primary dark
+$button-primary-dark-border-color: $color-3-5;
+$button-primary-dark-bg-color: $color-3-5;
+$button-primary-dark-text-color: $white;
+$button-primary-dark-border-color-hover: darken($color-3-5, 5%);
+$button-primary-dark-bg-color-hover: darken($color-3-5, 5%);
+$button-primary-dark-text-color-hover: $white;
+
+// - primary outline dark
+$button-primary-o-dark-border-color: $color-3-5;
+$button-primary-o-dark-bg-color: $trans;
+$button-primary-o-dark-text-color: $color-3-5;
+$button-primary-o-dark-border-color-hover: darken($color-3-5, 5%);
+$button-primary-o-dark-bg-color-hover: darken($color-3-5, 5%);
+$button-primary-o-dark-text-color-hover: $white;
+
+// - primary dark2
+$button-primary-dark2-border-color: $color-4-1;
+$button-primary-dark2-bg-color: $color-4-1;
+$button-primary-dark2-text-color: $white;
+$button-primary-dark2-border-color-hover: darken($color-4-1, 5%);
+$button-primary-dark2-bg-color-hover: darken($color-4-1, 5%);
+$button-primary-dark2-text-color-hover: $white;
+
+// - primary dark3
+$button-primary-dark3-border-color: $color-5-4;
+$button-primary-dark3-bg-color: $white;
+$button-primary-dark3-text-color: $color-5-3;
+$button-primary-dark3-border-color-hover: darken($color-5-4, 5%);
+$button-primary-dark3-bg-color-hover: darken($color-5-4, 5%);
+$button-primary-dark3-text-color-hover: $white;
+
+
+// - primary outline dark3
+$button-primary-o-dark3-border-color: $color-5-4;
+$button-primary-o-dark3-bg-color: $white;
+$button-primary-o-dark3-text-color: $color-5-3;
+$button-primary-o-dark3-border-color-hover: darken($color-5-4, 5%);
+$button-primary-o-dark3-bg-color-hover: darken($color-5-4, 5%);
+$button-primary-o-dark3-text-color-hover: $white;
+
+
+// - more
+$button-more-border-color: $color-1-11;
+$button-more-bg-color: $color-1-11;
+$button-more-text-color: $color-1-4;
+$button-more-border-color-hover: darken($color-1-11, 5%);
+$button-more-bg-color-hover: darken($color-1-11, 5%);
+$button-more-text-color-hover: $color-1-4;
+
+//- default
+$button-default-border-color: $color-4-1;
+$button-default-bg-color: $color-4-1;
+$button-default-text-color: $white;
+$button-default-border-color-hover: darken($color-4-1, 5%);
+$button-default-bg-color-hover: darken($color-4-1, 5%);
+$button-default-text-color-hover: $white;
+
+//- dropdown-close
+$button-dropdown-close-border-color: $color-5-1;
+$button-dropdown-close-bg-color: $color-5-1;
+$button-dropdown-close-text-color: $white;
+$button-dropdown-close-border-color-hover: darken($color-5-1, 5%);
+$button-dropdown-close-bg-color-hover: darken($color-5-1, 5%);
+$button-dropdown-close-text-color-hover: $white;
+
+//- default-dark
+$button-default-dark-border-color: $color-1-7;
+$button-default-dark-bg-color: $color-1-7;
+$button-default-dark-text-color: $white;
+$button-default-dark-border-color-hover: darken($color-1-7, 5%);
+$button-default-dark-bg-color-hover: darken($color-1-7, 5%);
+$button-default-dark-text-color-hover: $white;
+
+//- facebook
+$button-facebook-border-color: $color-5-5;
+$button-facebook-bg-color: $color-5-5;
+$button-facebook-text-color: $white;
+$button-facebook-border-color-hover: darken($color-5-5, 5%);
+$button-facebook-bg-color-hover: darken($color-5-5, 5%);
+$button-facebook-text-color-hover: $white;
+
+//- google
+$button-google-border-color: $color-5-6;
+$button-google-bg-color: $color-5-6;
+$button-google-text-color: $white;
+$button-google-border-color-hover: darken($color-5-6, 5%);
+$button-google-bg-color-hover: darken($color-5-6, 5%);
+$button-google-text-color-hover: $white;
+
+//-forgot
+$button-forgot-text-color: $color-5-7;
+
+
+//-icon-logout
+$button-icon-logout-text-color: $color-1-1;
+$button-icon-logout-text-color-hover: $color-1-4;
+// GRID
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+
+//profile prise
+$profile-prise-text-color: $color-4-2;
+
+//sub-title
+$sub-title-text-color: $color-1-1;
+$sub-title-text-2-color: $color-1-15;
+$sub-title-text-3-color: $color-5-9;
+$sub-title-text-4-color: $color-5-8;
+
+//date-text
+$date-text-color: $color-1-13;
+
+//profile name
+$profile-name-text-color: $color-1-1;
+
+//profile work hours
+$profile-work-hours-text-color: $color-1-1;
+$profile-work-hours-list-text-color: $color-1-13;
+
+
+//profile avatar
+$profile-avatar-border-color-1: $color-2-4;
+$profile-avatar-border-color-2: $color-3-3;
+
+//profile menu
+$profile-menu-text-color: $white;
+$profile-menu-bg-color: $color-1-7;
+$profile-menu-text-color-hover: $white;
+$profile-menu-bg-color-hover: darken($color-1-7, 5%);
+
+$profile-menu-bg-color-profile:$color-4-1;
+$profile-menu-bg-color-events:linear-gradient(135deg, $color-4-9 0%, $color-4-7 100%);;
+$profile-menu-bg-color-settings:$color-1-15;
+$profile-menu-bg-color-guide: linear-gradient(135deg, $color-3-2 0%, $color-3-4 100%);;
+
+
+//calendar
+$calendar-thead-bg-color: $color-1-9;
+$calendar-thead-text-color: $color-1-3;
+$calendar-thead-border-color: transparent;
+$calendar-tbody-bg-color: $white;
+$calendar-tbody-text-color: $color-6-1;
+$calendar-tbody-bg-other-month-color: $color-1-11;
+
+$calendar-tbody-bg-busy-days-color: $color-3-1;
+
+$calendar-tbody-text-busy-days-color: $color-1-9;
+$calendar-tbody-subtext-busy-days-color: $white;
+// DISPLAYS
+//$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+$displays: none, inline, inline-block, block, flex !default;

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>ic-favorite-selected</title>
+    <desc>Created with Sketch.</desc>
+    <g id="01_Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D_03_Venue-Details" transform="translate(-168.000000, -511.000000)" fill="#59C3B6" fill-rule="nonzero">
+            <g id="ic-favorite-selected" transform="translate(168.000000, 511.000000)">
+                <path d="M17.25,0 C20.972,0 24,3.028 24,6.75 C24,14.737 12.784,23.525 12.306,23.895 C12.216,23.965 12.108,24 12,24 C11.892,24 11.784,23.965 11.694,23.895 C11.216,23.525 0,14.737 0,6.75 C0,3.028 3.028,0 6.75,0 C8.809,0 10.723,0.928 12,2.514 C13.277,0.928 15.191,0 17.25,0 Z" id="Shape"/>
+            </g>
+        </g>
+    </g>
+</svg>

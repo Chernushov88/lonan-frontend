@@ -1,0 +1,25 @@
+// FAQ
+
+.section-faq{
+
+}
+
+@media (min-width: 576px){
+    .section-faq{
+        .page-header, .section-header{
+            padding-left: 20px;
+        }
+    }
+}
+@media (min-width: 768px){
+    .section-faq{
+        .page-header, .section-header{
+            padding-left: 30px;
+        }
+    }
+}
+@media (min-width: 992px){
+}
+@media (max-width: 1200px){
+    
+}

@@ -1,0 +1,50 @@
+.thank{
+    padding-top: 24px;
+    padding-bottom: 49px;
+    text-align: center;
+    .title-section{
+        margin-bottom: 32px;
+        .title{
+            margin-bottom: 12px;
+        }
+    }
+    .btn-section{
+        display: flex;
+        justify-content: center;
+    }
+
+    .back-link{
+        max-width: 253px;
+        width: 100%;
+        color: $white;
+        background: $color-4-1;
+        border: none;
+        min-height: 40px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        &:hover,
+        &:focus{
+            color: $button-primary-text-color-hover;
+            background-color: $button-primary-bg-color-hover;
+        }
+    }
+    .pic{
+        margin-bottom: 26px;
+    }
+    
+}
+
+@media(max-width: 575px) {
+    .thank{
+        text-align: left;
+        .title-section{
+            .title{
+                font-size: 24px;
+            }
+            p{
+                max-width: 85%;
+            }
+        }
+        
+    }
+}

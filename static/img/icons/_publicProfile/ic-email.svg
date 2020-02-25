@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="16px" viewBox="0 0 22 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ic-email</title>
+    <desc>Created with Sketch.</desc>
+    <g id="01_Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="D_05A_Guide-Public-Profile" transform="translate(-121.000000, -821.000000)" stroke="#A7ABBD">
+            <g id="ic-email" transform="translate(122.000000, 822.000000)">
+                <path d="M0,3.88888889 L0,14 L19.5555556,14 L19.5555556,3.88888889 M19.5555556,3.88888889 L19.5555556,0 L0,0 L0,3.88888889 L9.77777778,8.55555556 L19.5555556,3.88888889 Z" id="icon-email"></path>
+            </g>
+        </g>
+    </g>
+</svg>

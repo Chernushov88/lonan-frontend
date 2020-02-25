@@ -1,0 +1,72 @@
+.destination-banner{
+    text-align: center;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    min-height: 600px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 15px;
+    padding-top: 144px;
+    /*.container{
+        margin-bottom: 118px;
+        // width: 100%;
+    }*/
+
+    .title{
+        margin-bottom: 6px;
+        font-size: 80px; 
+        letter-spacing: .1px;
+        color: $white;
+        
+    }
+
+    .decor{
+        display: inline-block;
+        margin: 0 9px;
+        font-size: 110px;
+        font-family: 'al_frescoregular';
+        font-weight: normal;
+        
+    }
+
+    .btn{
+        //padding-top: 19px;
+        //padding-bottom: 19px;
+        //font-size: 16px;
+        //font-weight: 600;
+        //color: $white;
+        //max-width: 350px;
+        //width: 100%;
+        //border-radius: 100px;
+
+    }
+    @media(max-width: 767px) {
+        min-height: 400px;
+        padding-top: 45px;
+        /*.container{
+            margin-bottom: 111px;
+        }*/
+        .title{
+            margin: auto auto 24px;
+            font-size: 54px;
+            line-height: 50px;
+        }   
+        .btn{
+            max-width: 320px; 
+        }
+    }
+    @media(max-width: 575px) {
+        .title{
+            margin: auto auto 24px;
+            max-width: 75%;
+            letter-spacing: -.4px;
+        }
+        .decor{
+            margin: 0;
+            font-size: 64px;
+        }
+    }
+} 
+
