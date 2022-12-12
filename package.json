@@ -16,7 +16,7 @@
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/toast": "^3.3.0",
     "collect.js": "^4.20.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "luxon": "^1.22.0",
     "node-sass": "^4.13.1",
     "nuxt": "^2.0.0",
