@@ -17,7 +17,7 @@
     "@nuxtjs/toast": "^3.3.0",
     "collect.js": "^4.20.2",
     "express": "^4.17.1",
-    "luxon": "^1.22.0",
+    "luxon": "^2.5.2",
     "node-sass": "^4.13.1",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^6.5.0",
